@@ -23,7 +23,7 @@ class ArrStack:
         """
         return self.items.pop()
 
-    def stacktop(self):
+    def top(self):
         """
         获取栈顶的值
         :return: 栈顶的值
@@ -83,7 +83,7 @@ class LinkListStack:
         del tmp
         return pop_val
 
-    def stacktop(self):
+    def top(self):
         if not self.length:
             return None
         return self.head.next.data
